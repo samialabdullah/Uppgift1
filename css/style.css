@@ -49,7 +49,7 @@ html, body {
 .top-menu > .container {
         height: 100%;
         display: flex;
-        justify-content: space-between;
+        justify-content: end;
         align-items: center;
     }
 
@@ -90,7 +90,16 @@ html, body {
                 
                 }
 
+    .top-menu .menu-links   {
+            display:none;
+        
+    }
 
+
+    .top-menu .menu-links .links    {
+        display: none;
+
+    }
 
     .top-menu .menu-links a {
         color: var(--color--white);
@@ -112,3 +121,96 @@ html, body {
                     margin: 0 0 0 0.3rem;
                 }
 
+  /* main-menu */
+.main-menu {
+        background-color: var(--color--white);
+        color: var(--color-theme-dark);
+}
+
+     .main-menu > .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2.2rem 0;
+    }
+
+    .main-menu .brand {
+        flex: 2;
+    }
+    .main-menu .search {
+        flex: 4;
+    }
+    .main-menu .menu-links {
+        flex: 3;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+        .main-menu .menu-links .menu-link  {
+            text-decoration: none;
+            color: var(--color-theme-dark);
+            margin: 0 0.8rem;
+
+        }
+        .main-menu .menu-links .menu-link:hover  {
+            color: var(--color-theme);
+            
+        }
+        .main-menu .menu-links .menu-link:first-child {
+            margin: 0 2.4rem 0 0;
+        }
+        .main-menu .menu-links .menu-link:last-child {
+            margin: 0 0 0 0.8rem;
+        }
+
+
+
+        .main-menu .menu-links .menu-link i {
+            font-size: var(--font-size-16);
+        }
+
+    .main-menu nav {
+        border-top: 1px solid var(--color--gray-2);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+@media (min-width: 578px ) {
+    .top-menu .menu-links {
+        display: block;
+    }
+
+    .top-menu > .container {
+        justify-content: space-between;
+    }
+}
+
+
+
+@media (min-width: 992px) {
+
+    
+    .top-menu .menu-links .links {
+        display: inline;
+
+    }
+}
