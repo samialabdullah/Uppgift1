@@ -23,6 +23,7 @@
     --font-size-24:  2rem;
     --font-size-36:  3rem;
     --font-size-60:  5rem;
+
     --border-radius-small: 8px;
     --border-radius-medium: 25px;
     --border-radius-rounded: 50%;
@@ -237,9 +238,26 @@ html, body {
 
         }
 
+       /*  showcase */
+       .showcase {
+        background-color: var(--color--gray-3);
+       }
+       .showcase .container  {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
 
+        .showcase .showcase-body h1 {
+            font-family: var(--font-play);
+            font-size: var(--font-size-60);
+        }
 
+            .showcase .showcase-body h1 strong {
+            font-weight: var(--font-weight-bold);
+            color: var(--color-theme);
+            }
 
 
 
