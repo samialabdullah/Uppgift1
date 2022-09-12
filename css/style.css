@@ -3,7 +3,8 @@
     --color-theme:       #20D3C2;
     --color-theme-light: #EDFCFA;
     --color-theme-dark:  #0E153D;
-    --color-dark:        #080C24;
+    --color-theme-dark-light: #50546E;
+    --color-dark:     #080C24;
     --color--white:   #ffffff;
     --color--gray-0:  #AAAAAA;
     --color--gray-1:  #CCCCCC;
@@ -560,6 +561,47 @@ html, body {
                     .new-arrivals .card .card-menu li a:hover {
                         color: var(--color-theme);
                     }
+
+
+.site-title {
+    background-color: var( --color-theme-dark-light);
+    color: #ffffff;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.site-title .container  {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+
+.site-title h1  {
+    color: var(--color-theme);
+    font-size: 1.5rem;
+    margin: 0;
+
+    font-family: var(--font-roboto);
+    font-weight: var(--font-weight-medium);
+}
+
+.site-title nav ul {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.site-title nav ul li::before {
+    content: '/';
+}
+.site-title nav ul li::after {
+    content: '';
+    margin-right: 1rem;
+}
+
 
 
 
