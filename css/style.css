@@ -11,6 +11,7 @@
     --color--gray-2:  #E3E3E3;
     --color--gray-3:  #EEEEEE ;
     --color--gray-4:  #F6F6F6;
+    --color--gray-5:  #777777;
     --color-product-instock:     #82D8C6 ;
     --color-product-outofstock:  #FE6C6C;
     --font-play:   'Play', sans-serif;
@@ -78,6 +79,10 @@ html, body {
 }
 .outofstock {
     color: var(--color-product-outofstock);
+}
+
+.required {
+    color: var(--color-theme);
 }
 
 
@@ -573,7 +578,7 @@ html, body {
 .site-title .container  {
     display: flex;
     justify-content: space-between;
-    align-items: end;
+    align-items: center;
 }
 
 
@@ -594,13 +599,84 @@ html, body {
     list-style: none;
 }
 
-.site-title nav ul li::before {
-    content: '/';
+.site-title .breadcrumb {
+    list-style: none;
+    margin: 0;
+  }
+    .site-title .breadcrumb li {
+        display: inline;
+        font-size: 18px;
+    }
+        .site-title .breadcrumb li+li:before {
+            padding: 0 0.7rem 0 1rem;
+            color: var(--color--white);
+            content: "/\00a0";
+        }
+        .site-title .breadcrumb li a {
+            color: var(--color-theme);
+            text-decoration: none;
+        }
+            .site-title .breadcrumb li a:hover {
+                color: var(--color-theme-light);
+                text-decoration: underline;
+            }
+
+
+
+.signup-signin {
+    margin: 6rem 0; 
 }
-.site-title nav ul li::after {
-    content: '';
-    margin-right: 1rem;
+
+    .signup-signin .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+        align-items: start;
+    }
+
+    .signup-signin .card {
+        padding: 1.5rem;
+        border: none;
+        border-radius: var(--border-radius-small);
+        background-color: var(--color--gray-4);
+
+    }
+
+
+        .signup-signin .card .card-body h1 {
+            font-family: var(--font-roboto);
+            font-weight: var(--font-weight-medium);
+            color: var(--color-theme-dark);
+            font-size: 1.5rem;
+
+        }
+        .signup-signin .card .card-body .card-text {
+            margin: 1.5rem 0;
+            line-height: 2;
+
+        }
+            .signup-signin .card .card-body .card-text.text-small {
+                color: var(--color--gray-5);
+                font-size: 0.875rem;
+            }
+
+
+#signupForm input {
+    display: block;
+    width: 100%;
+    border: none;
+    border-radius: var(--border-radius-small);
+    padding: 0.6rem 0.9rem;
+    margin: 0.2rem 0;
 }
+    #signupForm input:focus {
+        outline: 0;
+        box-shadow: 0 0 3px 0 var(--color--gray-0);
+    }
+
+
+
+
 
 
 
