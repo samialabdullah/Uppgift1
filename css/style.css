@@ -655,6 +655,17 @@ html, body {
             line-height: 2;
 
         }
+            .signup-signin .card .card-body .card-text a {
+                color: var(--color-theme);
+                font-weight: var(--font-weight-medium);
+                text-decoration: none;
+            }
+            .signup-signin .card .card-body .card-text a:hover {
+                color: var(--color-theme-dark);
+                
+                text-decoration: underline;
+            }
+
             .signup-signin .card .card-body .card-text.text-small {
                 color: var(--color--gray-5);
                 font-size: 0.875rem;
