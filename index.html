@@ -1,361 +1,903 @@
+<!-- Det viser vilken version av HTML vi använder oss av, som är senaste HTML5 -->
 <!DOCTYPE html>
+
+<!-- HTML står för Hyper Text MAarkup Language, vilket betyder att det är ett märkspråk för webbsidor. lang="en" är ett attribut för språk -->
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="description" content="Shopping is more fun">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Shopping is more fun - kenkata</title>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous" defer></script>
-        <script src="https://kit.fontawesome.com/41c8b474e2.js" crossorigin="anonymous"></script>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-        <link href="css/style.css" rel="stylesheet">
-    </head>
- <body>
-        <header class="">
-            <div class="top-menu">
-                <div class="container">
-                    <div class="site-settings">
-                        <div class="dropdown dropdown-theme me-3" >
-                            <button  type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <span id="selected-language">ENG</span><i class="fa-solid fa-chevron-down ms-3"></i>
-                            </button>
-                            <ul id="languages" class="dropdown-menu dropdown-theme">
-                                <li><a class="dropdown-item" href="#">ENG</a></li>
-                                <li><a class="dropdown-item" href="#">SWE</a></li>
-                                
-                            </ul>
-                        </div>
-                        <div class="dropdown dropdown-theme me-3">
-                            <button  type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <span id="selected-currency">EUR</span><i class="fa-solid fa-chevron-down ms-3"></i>
-                            </button>
-                            <ul id="currencies" class="dropdown-menu dropdown-theme">
-                                <li><a class="dropdown-item" href="#">EUR</a></li>
-                                <li><a class="dropdown-item" href="#">USD</a></li>
-                                <li><a class="dropdown-item" href="#">SEK</a></li>
-                                
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="menu-links">
-                        <span class="links">
-                            <a href="#">Newsletter></a>
-                            <a href="#">Contact us</a>
-                            <a href="#">FAQs</a>
-                        </span>
-        
-                         <span class="social-media">
-                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
-                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                         </span>
-                    </div>
-                </div>
-            </div>
 
+<!-- head är det element som innehåller information till webbläsaren och det är viktigt för webbläsar och sökmotorer  -->
 
-            <div class="main-menu">
-                <div class="container">
-                    <div class="brand">
-                        <a href="index.html"><img src="images/logotype.svg" alt="Kenkata Webshop"></a>
-                    </div>
-                    <div class="search">
-                        <form id="searchboxForm">
-                            <input id="query" type="text" placeholder="Search products...">
-                            <button type="submit"><i class="fa-regular fa-magnifying-glass"></i></button>
-                        </form>
-                    </div>
-                    <div class="menu-links">
-                        <a class="menu-link" href="account.html"><i class="fa-regular fa-user me-2"></i> My account</a>
-                        <a class="menu-link" href="#"><i class="fa-regular fa-heart"></i></a>
-                        <a class="menu-link" href="#"><i class="fa-regular fa-shuffle"></i></a>
-                        <a id="cart" class="menu-link" href="#">
-                            <span class="badge rounded-pill">99+</span>
-                            <i class="fa-regular fa-cart-shopping me-2"></i>
-                            <span>€9999.00</span>
-                        </a>
-                    </div>
-                </div>
-                <nav>
-                    <div class="container">
-                        <div class="browse-categories">
-                            <div class="dropdown" >
-                                <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <span>
-                                        <i class="fa-regular fa-bars me-3"></i> Browse Categories
-                                    </span>
-                                    <i class="fa-regular fa-chevron-down ms-4"></i>
-                                </button>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Computers</a></li>
-                                    <li><a class="dropdown-item" href="#">TV & Displays</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="special-offer">
-                            <button class="btn btn-theme">SPECIAL OFFER</button>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-        </header>
+<head>
 
-        <section class="showcase ">
-            <div class="container">
-                <div class="showcase-body">
-                 <h1>Shopping is <strong>MORE FUN</strong></h1>
-                 <p>Vivamus dignissim a ex eu ornare. Ut fementum orci vel diam ultricies faucibus. Quisque quis erat sed</p>
-                 <a href="#"class="btn btn-lg btn-white">SHOP NOW</a>
-                 
-                </div>
-                <img src="images/showcase-image.svg" alt="too people standing ">
-            </div>
-        </section>
+    <!-- Meta-taggen måste ha attribut med värden, som ger information för webbläsaren och hur det ska användas.
+        charset ger vilken teckenuppsättnig som webbläsar ska använda sig av-->
 
-        <section class="webshop-info ">
-            <div class="container">
-                <div class="info-box">
-                    <img src="images/icons/free-shipping-icon.svg" alt="Free shipping">
-                    <div>
-                        <h1>Free shipping</h1>
-                        <p>For a local customer, we provide free shipping facility</p>
-                    </div>
-                </div>
-                <div class="info-box">
-                    <img src="images/icons/24-icon.svg" alt="24/7 support">
-                    <div>
-                        <h1>24/7 support</h1>
-                        <p>For any inquiry, we are available 24 hours every day</p>
-                    </div>
-                </div>
+    <meta charset="UTF-8">
+    <meta name="description" content="Shopping is more fun">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-                <div class="info-box">
-                    <img src="images/icons/onlinepayment-icon.svg" alt="Online payment">
-                    <div>
-                        <h1>Online payment</h1>
-                        <p>You can pay quickly and easily with our online payment system</p>
-                    </div>
-                </div>
+    <!--Här title som står dyker upp på fliken i webbläsaren  -->
 
-                <div class="info-box">
-                    <img src="images/icons/fastdelivery-icon.svg" alt="Free delivery">
-                    <div>
-                        <h1>Free delivery</h1>
-                        <p>For a local customer, we provide free shipping facility</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <title>Shopping is more fun - kenkata</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"
+        defer></script>
+    <script src="https://kit.fontawesome.com/41c8b474e2.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 
-        <section class="shop-by-category ">
-            <div class="container">
-                <div class="section-title">
-                  <h1>SHOP BY <span>CATEGORY</span></h1>
-                    <img src="images/wave-line.svg" alt="waveline">
-                    <p>We always try to give you the best product within a fast and reliable way</p>
-                </div>
+    <!-- Link-elementet gör att koppla ihop dokumentet med andra dokument -->
 
-                <div class="grid">
-                    <a href="#" id="category-box-1" class="category-box">
-                        <div class="category-box-title">
-                            Men
-                            <span>200 products</span>
-                        </div>
-                    </a>
-                    <a href="#" id="category-box-2" class="category-box">
-                        <div class="category-box-title">
-                            Women
-                            <span>1000 products</span>
-                        </div>
-                    </a>
-                    <a href="#" id="category-box-3" class="category-box">
-                        <div class="category-box-title">
-                            Kids
-                            <span>500 products</span>
-                        </div>
-                    </a>
-                    <a href="#" id="category-box-4" class="category-box">
-                        <div class="category-box-title">
-                            Shoes
-                            <span>200 products</span>
-                        </div>
-                    </a>  
-                    <a href="#" id="category-box-5" class="category-box">
-                        <div class="category-box-title">
-                            Hats
-                            <span>30 products</span>
-                        </div>
-                    </a>  
-                    <a href="#" id="category-box-6" class="category-box">
-                        <div class="category-box-title">
-                            Sunglasses
-                            <span>22 products</span>
-                        </div>
-                    </a>
-                    <a href="#" id="category-box-7" class="category-box">
-                        <div class="category-box-title">
-                             Watches
-                            <span>5 products</span>
-                        </div>
-                    </a>
-                </div>
-
-            </div>
-        </section>
-
-        <section class="new-arrivals">
-            <div class="container">
-                <div class="section-title">
-                  <h1>NEW <span>ARRIVALS</span></h1>
-                    <img src="images/wave-line.svg" alt="waveline">
-                    <p>Check out our latest products from top fashion designers</p>
-                </div>
-
-                <div class="row row-cols-1 row-cols-md-4 g-4">
-
-
-
-                    <div class="col">
-                        <div class="card h-100">
-                            <ul class="card-menu">
-                                <li><i class="fa-solid fa-circle instock"></i></li>
-                                <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
-                                <li><a href="#"><i class="fa-regular fa-shuffle"></i></a></li>
-                                <li><a href="#"><i class="fa-regular fa-magnifying-glass"></i></a></li>
-                                <li><a href="#"><i class="fa-regular fa-cart-shopping"></i></a></li>
-                            </ul>
-                            <img src="images/placeholders/placeholder-man-body.svg" alt="placeholder image">
-                            <div class="card-body">
-                                <h1>Blue silk flare sleeved top</h1>
-                                <button disabled>Fashion</button>
-                                <p class="card-old-price">€50.00</p>
-                                <div class="d-flex justify-content-between align-items-center w-100 ">
-                                    <p class="card-discount-price">€20.00</p>
-                                    <div class="text-theme">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                        
-                                    </div>
-                                </div>
-                                
-                            </div>
-                            <div class= "card-background"></div>
-                        </div>
-                    </div>
-
-
-                    <div class="col">
-                        <div class="card h-100">
-                            <ul class="card-menu">
-                                <li><i class="fa-solid fa-circle instock"></i></li>
-                                <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
-                                <li><a href="#"><i class="fa-regular fa-shuffle"></i></a></li>
-                                <li><a href="#"><i class="fa-regular fa-magnifying-glass"></i></a></li>
-                                <li><a href="#"><i class="fa-regular fa-cart-shopping"></i></a></li>
-                            </ul>
-                            <img src="images/placeholders/placeholder-man-body.svg" alt="placeholder image">
-                            <div class="card-body">
-                                <h1>Blue silk flare sleeved top</h1>
-                                <button disabled>Fashion</button>
-                                <p class="card-old-price">€50.00</p>
-                                <div class="d-flex justify-content-between align-items-center w-100 ">
-                                    <p class="card-discount-price">€20.00</p>
-                                    <div class="text-theme">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                        
-                                    </div>
-                                </div>
-                                
-                            </div>
-                            <div class= "card-background"></div>
-                        </div>
-                    </div>
-
-                    <div class="col">
-                        <div class="card h-100">
-                            <ul class="card-menu">
-                                <li><i class="fa-solid fa-circle outofstock"></i></li>
-                                <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
-                                <li><a href="#"><i class="fa-regular fa-shuffle"></i></a></li>
-                                <li><a href="#"><i class="fa-regular fa-magnifying-glass"></i></a></li>
-                                <li><a href="#"><i class="fa-regular fa-cart-shopping"></i></a></li>
-                            </ul>
-                            <img src="images/placeholders/placeholder-man-chest.svg" alt="placeholder image">
-                            <div class="card-body">
-                                <h1>New look men's coat</h1>
-                                <button disabled>Fashion</button>
-                                <p class="card-old-price">€64.00</p>
-                                <div class="d-flex justify-content-between align-items-center w-100 ">
-                                    <p class="card-discount-price">€56.00</p>
-                                    <div class="text-theme">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                        
-                                    </div>
-                                </div>
-                                
-                            </div>
-                            <div class= "card-background"></div>
-                        </div>
-                    </div>
-
-                    <div class="col">
-                        <div class="card h-100">
-                            <ul class="card-menu">
-                                <li><i class="fa-solid fa-circle instock"></i></li>
-                                <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
-                                <li><a href="#"><i class="fa-regular fa-shuffle"></i></a></li>
-                                <li><a href="#"><i class="fa-regular fa-magnifying-glass"></i></a></li>
-                                <li><a href="#"><i class="fa-regular fa-cart-shopping"></i></a></li>
-                            </ul>
-                            <img src="images/placeholders/placeholder-female-body.svg" alt="placeholder image">
-                            <div class="card-body">
-                                <h1>Circle pattern girls shirt</h1>
-                                <button disabled>Fashion</button>
-                                <p class="card-old-price">€35.00</p>
-                                <div class="d-flex justify-content-between align-items-center w-100 ">
-                                    <p class="card-discount-price">€15.00</p>
-                                    <div class="text-theme">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                        
-                                    </div>
-                                </div>
-                                
-                            </div>
-                            <div class= "card-background"></div>
-                        </div>
-                    </div>
-
-
-
-
-
-                </div>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="images/logotype.svg" rel="icon">
     
+</head>
+
+<!-- Här body ska innehåll alla element som ska synas på webbsidan: rubriker, text, listor bilder, ..osv -->
+
+<body>
+    <header class="">
+
+        <!-- man används div-elementet, för att gruppera innehåll  -->
+
+        <div class="top-menu">
+
+            <!-- container används för att får en centrerad layout  -->
+
+            <div class="container">
+                <div class="site-settings">
+                    <div class="dropdown dropdown-theme me-3">
+                        <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
+
+                            <!-- id bör används, för att skilja elementet åt -->
+
+                            <span id="selected-language">ENG</span><i class="fa-solid fa-chevron-down ms-3"></i>
+                        </button>
+                        <ul id="languages" class="dropdown-menu dropdown-theme">
+                            <li><a class="dropdown-item" href="#">ENG</a></li>
+                            <li><a class="dropdown-item" href="#">SWE</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="dropdown dropdown-theme me-3">
+                        <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
+
+                            <!-- span används för att gruppera endast inline-element -->
+
+                            <span id="selected-currency">EUR</span><i class="fa-solid fa-chevron-down ms-3"></i>
+                        </button>
+                        <ul id="currencies" class="dropdown-menu dropdown-theme">
+                            <li><a class="dropdown-item" href="#">EUR</a></li>
+                            <li><a class="dropdown-item" href="#">USD</a></li>
+                            <li><a class="dropdown-item" href="#">SEK</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="menu-links">
+                    <span class="links">
+
+                        <!--Man skapar a som vill ta webbläsare till extern sida, intern sida eller inom samma sida -->
+
+                        <a href="#">Newsletter></a>
+                        <a href="#">Contact us</a>
+                        <a href="#">FAQs</a>
+                    </span>
+
+                    <span class="social-media">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </span>
+                </div>
             </div>
-        </section>
+        </div>
+
+
+        <div class="main-menu">
+            <div class="container">
+                <div class="brand">
+                    <a href="index.html"><img src="images/logotype.svg" alt="Kenkata Webshop"></a>
+                </div>
+                <div class="search">
+                    <form id="searchboxForm">
+                        <input id="query" type="text" placeholder="Search products...">
+                        <button type="submit"><i class="fa-regular fa-magnifying-glass"></i></button>
+                    </form>
+                </div>
+                <div class="menu-links">
+                    <a class="menu-link" href="account.html"><i class="fa-regular fa-user me-2"></i> My account</a>
+                    <a class="menu-link" href="#"><i class="fa-regular fa-heart"></i></a>
+                    <a class="menu-link" href="#"><i class="fa-regular fa-shuffle"></i></a>
+                    <a id="cart" class="menu-link" href="#">
+                        <span class="badge rounded-pill">99+</span>
+                        <i class="fa-regular fa-cart-shopping me-2"></i>
+                        <span>€9999.00</span>
+                    </a>
+                </div>
+            </div>
+            <nav>
+                <div class="container">
+                    <div class="browse-categories">
+                        <div class="dropdown">
+                            <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span>
+                                    <i class="fa-regular fa-bars me-3"></i> Browse Categories
+                                </span>
+                                <i class="fa-regular fa-chevron-down ms-4"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Computers</a></li>
+                                <li><a class="dropdown-item" href="#">TV & Displays</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="special-offer">
+                        <button class="btn btn-theme">SPECIAL OFFER</button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!--Section används för att dela upp informationen på en sida i klar avdelningar -->
+
+    <section class="showcase ">
+        <div class="container">
+            <div class="showcase-body">
+
+                <!-- h1 är rubrik och text  -->
+
+                <h1>Shopping is <strong>MORE FUN</strong></h1>
+
+                <!--här är paragraph, som kan man skriva här text-->
+
+                <p>Vivamus dignissim a ex eu ornare. Ut fementum orci vel diam ultricies faucibus. Quisque quis erat sed
+                </p>
+                <a href="#" class="btn btn-lg btn-white">SHOP NOW</a>
+
+            </div>
+            <img src="images/showcase-image.svg" alt="too people standing ">
+        </div>
+    </section>
+
+    <section class="webshop-info ">
+        <div class="container">
+            <div class="info-box">
+                <img src="images/icons/free-shipping-icon.svg" alt="Free shipping">
+                <div>
+
+
+                    <h2>Free shipping</h2>
+                    <p>For a local customer, we provide free shipping facility</p>
+                </div>
+            </div>
+            <div class="info-box">
+                <img src="images/icons/24-icon.svg" alt="24/7 support">
+                <div>
+                    <h2>24/7 support</h2>
+                    <p>For any inquiry, we are available 24 hours every day</p>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <img src="images/icons/onlinepayment-icon.svg" alt="Online payment">
+                <div>
+                    <h2>Online payment</h2>
+                    <p>You can pay quickly and easily with our online payment system</p>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <img src="images/icons/fastdelivery-icon.svg" alt="Free delivery">
+                <div>
+                    <h2>Free delivery</h2>
+                    <p>For a local customer, we provide free shipping facility</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="shop-by-category ">
+        <div class="container">
+            <div class="section-title">
+                <h2>SHOP BY <span>CATEGORY</span></h2>
+                <img src="images/wave-line.svg" alt="waveline">
+                <p>We always try to give you the best product within a fast and reliable way</p>
+            </div>
+
+            <div class="grid">
+                <a href="#" id="category-box-1" class="category-box">
+                    <div class="category-box-title">
+                        Men
+                        <span>200 products</span>
+                    </div>
+                </a>
+                <a href="#" id="category-box-2" class="category-box">
+                    <div class="category-box-title">
+                        Women
+                        <span>1000 products</span>
+                    </div>
+                </a>
+                <a href="#" id="category-box-3" class="category-box">
+                    <div class="category-box-title">
+                        Kids
+                        <span>500 products</span>
+                    </div>
+                </a>
+                <a href="#" id="category-box-4" class="category-box">
+                    <div class="category-box-title">
+                        Shoes
+                        <span>200 products</span>
+                    </div>
+                </a>
+                <a href="#" id="category-box-5" class="category-box">
+                    <div class="category-box-title">
+                        Hats
+                        <span>30 products</span>
+                    </div>
+                </a>
+                <a href="#" id="category-box-6" class="category-box">
+                    <div class="category-box-title">
+                        Sunglasses
+                        <span>22 products</span>
+                    </div>
+                </a>
+                <a href="#" id="category-box-7" class="category-box">
+                    <div class="category-box-title">
+                        Watches
+                        <span>5 products</span>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="new-arrivals">
+        <div class="container">
+            <div class="section-title">
+                <h2>NEW <span>ARRIVALS</span></h2>
+                <img src="images/wave-line.svg" alt="waveline">
+                <p>Check out our latest products from top fashion designers</p>
+            </div>
+
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+
+
+
+                <div class="col">
+                    <div class="card h-100">
+
+                        <!-- Här används ul för en punktlista och varje del i listan ska finnas i li-elementet -->
+
+                        <ul class="card-menu">
+                            <li><i class="fa-solid fa-circle instock"></i></li>
+                            <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                            <li><a href="#"><i class="fa-regular fa-shuffle"></i></a></li>
+                            <li><a href="#"><i class="fa-regular fa-magnifying-glass"></i></a></li>
+                            <li><a href="#"><i class="fa-regular fa-cart-shopping"></i></a></li>
+                        </ul>
+                        <img src="images/placeholders/placeholder-man-body.svg" alt="placeholder image">
+                        <div class="card-body">
+                            <h2>Blue silk flare sleeved top</h2>
+                            <button disabled>Fashion</button>
+                            <p class="card-old-price">€50.00</p>
+                            <div class="d-flex justify-content-between align-items-center w-100 ">
+                                <p class="card-discount-price">€20.00</p>
+                                <div class="text-theme">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="card-background"></div>
+                    </div>
+                </div>
+
+
+                <div class="col">
+                    <div class="card h-100">
+                        <ul class="card-menu">
+                            <li><i class="fa-solid fa-circle instock"></i></li>
+                            <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                            <li><a href="#"><i class="fa-regular fa-shuffle"></i></a></li>
+                            <li><a href="#"><i class="fa-regular fa-magnifying-glass"></i></a></li>
+                            <li><a href="#"><i class="fa-regular fa-cart-shopping"></i></a></li>
+                        </ul>
+                        <img src="images/placeholders/placeholder-man-body.svg" alt="placeholder image">
+                        <div class="card-body">
+                            <h2>Blue silk flare sleeved top</h2>
+                            <button disabled>Fashion</button>
+                            <p class="card-old-price">€50.00</p>
+                            <div class="d-flex justify-content-between align-items-center w-100 ">
+                                <p class="card-discount-price">€20.00</p>
+                                <div class="text-theme">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="card-background"></div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100">
+                        <ul class="card-menu">
+                            <li><i class="fa-solid fa-circle outofstock"></i></li>
+                            <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                            <li><a href="#"><i class="fa-regular fa-shuffle"></i></a></li>
+                            <li><a href="#"><i class="fa-regular fa-magnifying-glass"></i></a></li>
+                            <li><a href="#"><i class="fa-regular fa-cart-shopping"></i></a></li>
+                        </ul>
+
+                        <!-- src används för bildens adress -->
+
+                        <img src="images/placeholders/placeholder-man-chest.svg" alt="placeholder image">
+                        <div class="card-body">
+                            <h2>New look men's coat</h2>
+                            <button disabled>Fashion</button>
+                            <p class="card-old-price">€64.00</p>
+                            <div class="d-flex justify-content-between align-items-center w-100 ">
+                                <p class="card-discount-price">€56.00</p>
+                                <div class="text-theme">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="card-background"></div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100">
+                        <ul class="card-menu">
+                            <li><i class="fa-solid fa-circle instock"></i></li>
+                            <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                            <li><a href="#"><i class="fa-regular fa-shuffle"></i></a></li>
+                            <li><a href="#"><i class="fa-regular fa-magnifying-glass"></i></a></li>
+                            <li><a href="#"><i class="fa-regular fa-cart-shopping"></i></a></li>
+                        </ul>
+                        <img src="images/placeholders/placeholder-female-body.svg" alt="placeholder image">
+                        <div class="card-body">
+                            <h2>Circle pattern girls shirt</h2>
+                            <button disabled>Fashion</button>
+                            <p class="card-old-price">€35.00</p>
+                            <div class="d-flex justify-content-between align-items-center w-100 ">
+                                <p class="card-discount-price">€15.00</p>
+                                <div class="text-theme">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="card-background"></div>
+                    </div>
+                </div>
 
 
 
 
 
+            </div>
 
-         <div style="height: 4000px;"></div>
-    </body>
+        </div>
+    </section>
+
+    <section class="customer-section">
+        <div class="customer-container">
+            <div class="customer-section-content">
+                <div class="customer-left-side">
+                    <div class="customer-left-text">
+                        <h2> 30% <span>OFF</span></h2>
+
+                        <p>FOR NEW CUSTOMER</p>
+
+                        <button class="customer-shop-button">SHOP NOW</button>
+                    </div>
+                </div>
+
+                <div class="customer-right-side">
+                    <div class="customer-right-text">
+                        <p>
+                            Donec pulvinar arcu vitae ipsum varius cursus. Nunc iaculis fermentum iaculis.
+                            Nunc pulvinar purus at erat lacinia, ut convallis nibh consequat. Integer nulla nisi,
+                            aliquam at tellus a,
+                            viverra scelerisque purus. Nam pretium iaculis ultrices.
+                        </p>
+
+                        <button class="customer-learn-button">LEARN MORE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-products">
+        <div class="container">
+            <div class="section-title">
+                <h2>FEATURED <span>PRODUCTS</span></h2>
+                <img src="images/wave-line.svg" alt="waveline">
+                <p>Check out our monthly featured products from top brands</p>
+            </div>
+
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+
+
+
+                <div class="col">
+                    <div class="card h-100">
+                        <ul class="card-menu">
+                            <li><i class="fa-solid fa-circle instock"></i></li>
+                            <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                            <li><a href="#"><i class="fa-regular fa-shuffle"></i></a></li>
+                            <li><a href="#"><i class="fa-regular fa-magnifying-glass"></i></a></li>
+                            <li><a href="#"><i class="fa-regular fa-cart-shopping"></i></a></li>
+                        </ul>
+                        <img src="images/placeholders/female-jacket.svg" alt="placeholder-image">
+                        <div class="card-body">
+                            <h3>Winter collection for women's</h3>
+                            <button disabled>Fashion</button>
+                            <p class="card-old-price">€50.00</p>
+                            <div class="d-flex justify-content-between align-items-center w-100 ">
+                                <p class="card-discount-price">€20.00</p>
+                                <div class="text-theme">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="card-background"></div>
+                    </div>
+                </div>
+
+
+                <div class="col">
+                    <div class="card h-100">
+                        <ul class="card-menu">
+                            <li><i class="fa-solid fa-circle instock"></i></li>
+                            <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                            <li><a href="#"><i class="fa-regular fa-shuffle"></i></a></li>
+                            <li><a href="#"><i class="fa-regular fa-magnifying-glass"></i></a></li>
+                            <li><a href="#"><i class="fa-regular fa-cart-shopping"></i></a></li>
+                        </ul>
+                        <img src="images/placeholders/female-jacket.svg" alt="placeholder-image">
+                        <div class="card-body">
+                            <h3>Winter collection for women's</h3>
+                            <button disabled>Fashion</button>
+                            <p class="card-old-price">€50.00</p>
+                            <div class="d-flex justify-content-between align-items-center w-100 ">
+                                <p class="card-discount-price">€20.00</p>
+                                <div class="text-theme">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="card-background"></div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100">
+                        <ul class="card-menu">
+                            <li><i class="fa-solid fa-circle outofstock"></i></li>
+                            <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                            <li><a href="#"><i class="fa-regular fa-shuffle"></i></a></li>
+                            <li><a href="#"><i class="fa-regular fa-magnifying-glass"></i></a></li>
+                            <li><a href="#"><i class="fa-regular fa-cart-shopping"></i></a></li>
+                        </ul>
+                        <img src="images/placeholders/placeholder-man-chest.svg" alt="placeholder-image">
+                        <div class="card-body">
+                            <h3>New look men's coat</h3>
+                            <button disabled>Fashion</button>
+                            <p class="card-old-price">€64.00</p>
+                            <div class="d-flex justify-content-between align-items-center w-100 ">
+                                <p class="card-discount-price">€56.00</p>
+                                <div class="text-theme">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="card-background"></div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100">
+                        <ul class="card-menu">
+                            <li><i class="fa-solid fa-circle instock"></i></li>
+                            <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                            <li><a href="#"><i class="fa-regular fa-shuffle"></i></a></li>
+                            <li><a href="#"><i class="fa-regular fa-magnifying-glass"></i></a></li>
+                            <li><a href="#"><i class="fa-regular fa-cart-shopping"></i></a></li>
+                        </ul>
+                        <img src="images/placeholders/man-jacket.svg" alt="placeholder-image">
+                        <div class="card-body">
+                            <h3>Red women's blazer full</h3>
+                            <button disabled>Fashion</button>
+                            <p class="card-old-price">€35.00</p>
+                            <div class="d-flex justify-content-between align-items-center w-100 ">
+                                <p class="card-discount-price">€15.00</p>
+                                <div class="text-theme">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="card-background"></div>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="flash-section">
+        <div class="flash-container">
+            <div class="flash-section-content">
+                <div class="flash-left-side">
+                    <div class="flash-left-text">
+                        <h2>FLASH SALE</h2>
+
+                        <p>UP TO 50% OFF</p>
+                    </div>
+                </div>
+
+                <div class="flash-right-side">
+                    <div class="flash-circle-box">
+                        <ul>
+                            <li>
+                                <span class="edge"></span>
+                                <span class="nbr">4</span>
+                                <span class="time">Days</span>
+                            </li>
+                            <li>
+                                <span class="edge"></span>
+                                <span class="nbr">11</span>
+                                <span class="time">Hours</span>
+                            </li>
+                            <li>
+                                <span class="edge"></span>
+                                <span class="nbr">27</span>
+                                <span class="time">Minutes</span>
+                            </li>
+                            <li>
+                                <span class="edge"></span>
+                                <span class="nbr">18</span>
+                                <span class="time">Seconds</span>
+                            </li>
+                        </ul>
+
+                        <button class="flash-shop-button">Shop Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="top-sellers">
+        <div class="container">
+            <div class="section-title">
+                <h2>TOP <span>SELLERS</span></h2>
+                <img src="images/wave-line.svg" alt="waveline">
+                <p>Check out our weekly top sellers in all category</p>
+            </div>
+
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+
+                <div class="col">
+                    <div class="card h-100">
+                        <ul class="card-menu">
+                            <li><i class="fa-solid fa-circle instock"></i></li>
+                            <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                            <li><a href="#"><i class="fa-regular fa-shuffle"></i></a></li>
+                            <li><a href="#"><i class="fa-regular fa-magnifying-glass"></i></a></li>
+                            <li><a href="#"><i class="fa-regular fa-cart-shopping"></i></a></li>
+                        </ul>
+                        <img src="images/placeholders/man-shirt.svg" alt="placeholder image">
+                        <div class="card-body">
+                            <h3>Men's denim shirts full</h3>
+                            <button disabled>Fashion</button>
+                            <p class="card-old-price">€200.00</p>
+                            <div class="d-flex justify-content-between align-items-center w-100 ">
+                                <p class="card-discount-price">€80.00</p>
+                                <div class="text-theme">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="card-background"></div>
+                    </div>
+                </div>
+
+
+                <div class="col">
+                    <div class="card h-100">
+                        <ul class="card-menu">
+                            <li><i class="fa-solid fa-circle instock"></i></li>
+                            <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                            <li><a href="#"><i class="fa-regular fa-shuffle"></i></a></li>
+                            <li><a href="#"><i class="fa-regular fa-magnifying-glass"></i></a></li>
+                            <li><a href="#"><i class="fa-regular fa-cart-shopping"></i></a></li>
+                        </ul>
+                        <img src="images/placeholders/man-shirt.svg" alt="placeholder image">
+                        <div class="card-body">
+                            <h3>Men's denim shirts full</h3>
+                            <button disabled>Fashion</button>
+                            <p class="card-old-price">€200.00</p>
+                            <div class="d-flex justify-content-between align-items-center w-100 ">
+                                <p class="card-discount-price">€80.00</p>
+                                <div class="text-theme">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="card-background"></div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100">
+                        <ul class="card-menu">
+                            <li><i class="fa-solid fa-circle outofstock"></i></li>
+                            <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                            <li><a href="#"><i class="fa-regular fa-shuffle"></i></a></li>
+                            <li><a href="#"><i class="fa-regular fa-magnifying-glass"></i></a></li>
+                            <li><a href="#"><i class="fa-regular fa-cart-shopping"></i></a></li>
+                        </ul>
+                        <img src="images/placeholders/bag-and-shoe.svg" alt="placeholder image">
+                        <div class="card-body">
+                            <h3>Women's leather bag and shoe</h3>
+                            <button disabled>Fashion</button>
+                            <p class="card-old-price">€50.00</p>
+                            <div class="d-flex justify-content-between align-items-center w-100 ">
+                                <p class="card-discount-price">€35.00</p>
+                                <div class="text-theme">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="card-background"></div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100">
+                        <ul class="card-menu">
+                            <li><i class="fa-solid fa-circle instock"></i></li>
+                            <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                            <li><a href="#"><i class="fa-regular fa-shuffle"></i></a></li>
+                            <li><a href="#"><i class="fa-regular fa-magnifying-glass"></i></a></li>
+                            <li><a href="#"><i class="fa-regular fa-cart-shopping"></i></a></li>
+                        </ul>
+                        <img src="images/placeholders/shoes.svg" alt="placeholder image">
+                        <div class="card-body">
+                            <h3>New look men's sneakers</h3>
+                            <button disabled>Shoes</button>
+                            <p class="card-old-price">€50.00</p>
+                            <div class="d-flex justify-content-between align-items-center w-100 ">
+                                <p class="card-discount-price">€20.00</p>
+                                <div class="text-theme">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="card-background"></div>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="subscribe-now">
+        <div class="subscribe-container">
+            <div class="subscribe-section">
+                <div class="subscribe-left-side">
+                    <div class="subscribe-text-box">
+                        <h2> SUBSCRIBE <span>NOW</span></h2>
+
+                        <p>Signup for awesome news about our new products and know our special discounts on products</p>
+
+
+
+                        <form id="searchboxform">
+                            <input id="search-field" type="text" placeholder="Enter email address">
+                            <button class="btn btn-theme">Subscribe</button>
+                        </form>
+
+                    </div>
+                </div>
+
+                <div class="subscribe-right-side">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="icon-part">
+        <div class="container">
+            <div class="icon-path">
+                <img src="images/icon-last/bexim-icon.svg" alt="bexim">
+                <img src="images/icon-last/lighton.svg" alt="lighton">
+                <img src="images/icon-last/dismis-icon.svg" alt="dismis">
+                <img src="images/icon-last/rosimo.svg" alt="rosimo">
+                <img src="images/icon-last/dallas-icon.svg" alt="dallas">
+            </div>
+        </div>
+    </div>
+
+    <!-- Sidfoten kommer att innehålla ofta copyrightinformation, kontaktinformation och länkar. -->
+
+    <footer class="fotter-part">
+        <div class="fotter-container">
+            <div class="fotter-section">
+                <div class="fotter-first-info">
+                    <div class="fotter-text-box">
+                        <img src="images/logo-white.svg" alt="logoken">
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Praesent enim quam, ullamcorper vel tellus vitae,
+                            tempus fringilla lectus. Donec maximus justo
+                            eu nisl convallis iaculis. Aenean laoreet.
+                        </p>
+                        <h1> Follow us</h1>
+                    </div>
+                </div>
+
+                <div class="fotter-second-info">
+                    <div class="fotter-text-sec-box">
+                        <div class="info-item">
+                            <h2>CONTACT INFO</h2>
+                            <div class="address-info">
+                                <h3>Address:</h3>
+
+                                <!-- br används för att göra en radbrytning inne i ett stycke -->
+
+                                <p>Solna Business Park <br> Feni-2500, Stockholm</p>
+                            </div>
+                            <div class="phone-info">
+                                <h3>Phone:</h3>
+                                <p>+08-123456789 </p>
+                                <p>+08-123456789</p>
+                            </div>
+                            <div class="email-info">
+                                <h3>Email:</h3>
+                                <p>support@website.com <br> info@website.com</p>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+
+                <div class="fotter-third-info">
+                    <div class="fotter-third-box">
+                        <div class="third-item">
+                            <h2>USEFUL LINKS</h2>
+                            <P>Privacy Policy <br>
+                                <span>Terms & Conditions</span><br>
+                                Contact Us <br>
+                                Our Sitemap <br>
+                                Latest News <br>
+                                Returns
+                            </P>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="grid-container">
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+    </footer>
+
+    <div id="copyright">
+        <p>&copy; Copyright 2020 KenKata</p>
+    </div>
+
+
+</body>
+
 </html>
